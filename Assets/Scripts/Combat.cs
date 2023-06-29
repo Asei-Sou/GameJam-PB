@@ -18,6 +18,8 @@ public class Combat : MonoBehaviour
     public bool enemyAttacking;
     private bool gameOver = false;
 
+    public int turnCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -127,6 +129,7 @@ public class Combat : MonoBehaviour
     {
         if (!gameOver)
         {
+            turnCount++;
             getUnitsHealth();
 
             if (playerAttacking)
