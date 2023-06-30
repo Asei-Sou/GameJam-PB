@@ -32,7 +32,7 @@ public class LLM : MonoBehaviour
                 inputField.GetComponent<TMP_InputField>().text == "") return;
 
             // take the API key from discord
-            var api = new OpenAIAPI("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");
+            var api = new OpenAIAPI("");
 
             // Not sure which version its using
             var chat = api.Chat.CreateConversation();
